@@ -189,6 +189,7 @@ img{
    .signup-page{
       max-width: 800px;
       display: flex;
+      flex-direction: row-reverse;
    }
    .hero{
       width: 45%;
