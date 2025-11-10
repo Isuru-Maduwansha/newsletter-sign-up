@@ -1,7 +1,7 @@
 /* Variables */
 
 :root{
-   ---c-primaryRed: hsl(4, 100%, 67%);
+   --c-primaryRed: hsl(4, 100%, 67%);
    --c-neutralBlue800: hsl(234, 29%, 20%);
    --c-neutralBlue700: hsl(235, 18%, 26%);
    --c-neutralGrey: hsl(0, 0%,58%);
@@ -89,12 +89,12 @@ img{
 }
 
 .btn:hover{
-   background-color: var(---c-primaryRed);
+   background-color: var(--c-primaryRed);
 }
 
 /* label and error message */
 
-.lable-visibility{
+.label-visibility{
    display: flex;
    justify-content: space-between;
 }
@@ -106,13 +106,12 @@ img{
 .hidden-visible{
    visibility: visible;
    font-weight: 600;
-   color: var(---c-primaryRed);
+   color: var(--c-primaryRed);
 }
 
 .input-email-error{
    padding-left: 2em;
-   border: 2px solid var(---c-primaryRed);
-   border-color: var(---c-primaryRed);
+   border: 2px solid var(--c-primaryRed);
    background-color: rgba(237, 159, 159, 0.819);
 }
 
@@ -120,7 +119,6 @@ img{
 
 .success-message{
    display: none;
-   height: 0;
    position: absolute;
 }
 

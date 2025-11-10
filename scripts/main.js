@@ -8,7 +8,7 @@ const inputError = document.querySelector("#inputEmail");
 
 subscribeBtn.addEventListener('click', () => {
    const emailInput = document.getElementById("inputEmail");
-   const emailValue = emailInput.value;
+   const emailValue = emailInput.value.trim();
    const email = document.getElementById("subscribeEmail");
 
    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -18,12 +18,11 @@ subscribeBtn.addEventListener('click', () => {
       email.textContent = emailValue;
       visibility.classList.add("success-message-visible");
       error.classList.remove("hidden-visible");
+      emailInput.value = "";
    }else{
       error.classList.add("hidden-visible");
       inputError.classList.add("input-email-error");
    }
-
-   emailInput.value = "";
 });
 
 dismissBtn.addEventListener('click', () =>{
